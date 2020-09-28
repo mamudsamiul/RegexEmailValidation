@@ -4,7 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class CheckFormat {
-	static Pattern pattern = Pattern.compile("^[a]{1}[b]{1}[c]{1}");
+	static Pattern pattern = Pattern.compile("^abc[.a-zA-Z0-9]*(@bridgelabz).*$");
 
 	static boolean check(String data) {
 		Matcher matcher = pattern.matcher(data);
